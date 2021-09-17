@@ -35,30 +35,6 @@
 		<link href="https://cdn.staticfile.org/emoji/0.2.2/emoji.css" rel="stylesheet" type="text/css" />
 		<script src="https://cdn.staticfile.org/emoji/0.2.2/emoji.js"></script>
 		<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-
-
-		<script>
-			$(document).ready(() => {
-				$('.ui.dropdown').dropdown();
-				$('.ui.checkbox').checkbox();
-				$('.menu:not(.A) .item').tab();
-				$('.button').popup();
-
-				$('.ui.menu:not(.A) a.item').on('click', function() {
-					$(this)
-						.addClass('active')
-						.siblings()
-						.removeClass('active');
-				});
-			});
-		</script>
-
-		<script>
-			$('.ui.accordion')
-  				.accordion()
-			;
-			$('.ui.accordion').accordion('refresh');
-		</script>
 	</head>
 
 	<body>
