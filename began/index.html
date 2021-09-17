@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<meta charset="utf-8">
+
+	<head>
+		<title>双减采访小组</title>
+		<link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/semantic-ui/2.4.1/semantic.min.css"
+			rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+		<link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/tomorrow.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/math.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/style.css?20181212" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/morris.js/0.5.1/morris.css"
+			rel="stylesheet">
+
+		<link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/fira-mono.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/lato.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/open-sans.css" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/google-fonts/exo-2.css" rel="stylesheet">
+
+		<script data-cfasync="false"
+			src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert"></script>
+		<script data-cfasync="false"
+			src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/semantic-ui/2.4.1/semantic.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/cdnjs/Chart.js/2.7.3/Chart.bundle.min.js">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/syzoj-public-cdn@1.0.6/self/script.js?20170710"></script>
+
+		<link href="https://cdn.staticfile.org/emoji/0.2.2/emoji.css" rel="stylesheet" type="text/css" />
+		<script src="https://cdn.staticfile.org/emoji/0.2.2/emoji.js"></script>
+		<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+
+		<script>
+			$(document).ready(() => {
+				$('.ui.dropdown').dropdown();
+				$('.ui.checkbox').checkbox();
+				$('.menu:not(.A) .item').tab();
+				$('.button').popup();
+
+				$('.ui.menu:not(.A) a.item').on('click', function() {
+					$(this)
+						.addClass('active')
+						.siblings()
+						.removeClass('active');
+				});
+			});
+		</script>
+
+        <script>
+            $('.trigger.example .accordion')
+                .accordion({
+                    selector: {
+                    trigger: '.title .icon'
+                }
+            });
+        </script>
+	</head>
+
+	<body>
+		<div class="ui borderless menu" style="height: 49px; ">
+			<div class="ui wide container">
+				<div class="header item">
+					<span style="font-family: 'Exo 2'; font-size: 1.5em; font-weight: 600; ">双减采访小组</span>
+				</div>
+				<a class="active item" href="/"><i class="home icon"></i>首页</a>
+				<a class="item" href="/began"><i class="hand point right outline icon"></i>采访前期</a>
+				<a class="item" href="/middle"><i class="angle double right icon"></i>采访过程</a>
+				<a class="item" href="/end"><i class="eye icon"></i>采访结果</a>
+			</div>
+		</div>
+		
+		<div class="ui tab active wide container" data-tab="began">
+			<div style="margin-top: 28px; ">
+				<div class="ui main wide container">
+					<div style="padding-left: 1em; padding-right: 1em; ">
+						<div class="ui two column grid">
+							<div class="two column row">
+								<div class="twelve wide column">
+                                    <div class="ui styled fluid accordion">
+                                        <div class="active title">
+                                            <i class="dropdown icon"></i>
+                                            2021-09-17
+                                        </div>
+                                        <div class="active content">
+                                            <p>狗算是一种家畜。以其忠诚与忠心广受人类欢迎, 可以在世界各地的许多家庭里发现这个受欢迎的客人。</p>
+                                        </div>
+                                        <div class="title">
+                                            <i class="dropdown icon"></i>
+                                            What kinds of dogs are there?
+                                        </div>
+                                        <div class="content">
+                                            <p>狗有许多品种，每个品种都有不同的大小及性格，饲主通常选择适合自己生活方式的品种当作自已的伙伴，其中最受欢迎的品种绝对是吉娃娃。</p>
+                                        </div>
+                                        <div class="title">
+                                            <i class="dropdown icon"></i>
+                                            How do you acquire a dog?
+                                        </div>
+                                        <div class="content">
+                                            <p>通常有三种方式可以取得一只狗狗，宠物店、私人饲主或是动物之家。 (请以领养代替购买)</p>
+                                            <p>你可以在动物之家内领养一只健康的小狗，比起在宠物店买，收容所中的宠物比较不容易有近亲交配出现的缺陷问题，而且领养一只小狗的费用远比你在宠物店中购买便宜得多。</p>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
