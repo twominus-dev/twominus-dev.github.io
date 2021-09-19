@@ -117,15 +117,15 @@ a{text-decoration:none;}
         //交互响应函数
         function keydown(keyCode){
                 switch(keyCode){
-                        case 37 || 65: //左边
+                        case 65: //左边
                                 if(toGo != 1 && toGo != 3)  toGo = 1;break;
-                        case 38 || 87: //上边
+                        case 87: //上边
                                 if(toGo != 2 && toGo != 4)        toGo = 2;break;
-                        case 39 || 68: //右边
+                        case 68: //右边
                                 if(toGo != 3 && toGo != 1)         toGo = 3;break;
-                        case 40 || 83: //下的
+                        case 83: //下的
                                 if(toGo != 4 && toGo != 2)        toGo = 4;break;
-                        case 80 || 32: //开始/暂停
+                        case 32: //开始/暂停
                                 if(isPause){
                                         interval = setInterval(move,200);
                                         isPause = false;
